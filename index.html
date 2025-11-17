@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <title>金融データ可視化</title>
-    </head>
-    <body>
-        <h1>金融データ可視化サイト</h1>
-        <p>テストページです</p>
-        <script>
-            fetch('data/sample.json')
-            .then(res => res.json())
-            .then(data => console.log(data))
-        </script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>金融データ可視化</title>
+    <!-- Plotly ライブラリ読み込み -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <h1>金融データ可視化サイト</h1>
+    <h1>株価チャート</h1>
+    <!-- 描画用の div -->
+    <div id="chart" style="width: 600px; height: 400px"></div>
+  </body>
 </html>
